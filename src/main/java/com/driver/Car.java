@@ -1,16 +1,19 @@
 package com.driver;
 
 public class Car extends Vehicle {
-    private int wheels;
-    private String type;
-    private int doors;
-    private int gears;
-    private boolean isManual;
-    private int currentGear;
-    private int seats;
+    private int wheels=4;
+    private String type="leftt";
+    private int doors=4;
+    private int gears=5;
+    private boolean isManual=true;
+    private int currentGear=1;
+    private int seats=6;
 
     public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats) {
         //Hint: Car extends Vehicle
+        changeGear(2);
+        changeSpeed(7,8);
+
     }
 
     public void changeGear(int newGear){
