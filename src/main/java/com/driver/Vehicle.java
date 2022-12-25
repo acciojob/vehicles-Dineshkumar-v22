@@ -3,7 +3,7 @@ package com.driver;
 public class Vehicle {
 
     private String name;
-     int currentSpeed;
+    private int currentSpeed;
     private int currentDirection;
 
     public Vehicle(String name) {
@@ -33,5 +33,16 @@ public class Vehicle {
         this.currentSpeed=0;
         System.out.println("stop method called - The vehicle is stopped");
     }
-
+public int getCurrentSpeed()
+    {
+        return currentSpeed;
+    }
+    public int currentDirection()
+    {
+        return currentDirection;
+    }
+    public String name()
+    {
+        return name;
+    }
 }
