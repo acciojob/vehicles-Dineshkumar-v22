@@ -4,11 +4,12 @@ public class F1 extends Car {
 
     public F1(String name, boolean isManual) {
         //Use arbitrary values for parameters which are not mentioned
-        accelerate(56);
+        super(name);
+        super(isManual);
     }
 
     public void accelerate(int rate){
-        int newSpeed = currentSpeed; //set the value of new speed by using currentSpeed and rate
+        int newSpeed = currentSpeed+rate; //set the value of new speed by using currentSpeed and rate
         /**
          * speed 0: gear 1
          * speed 1-50: gear 1
@@ -23,6 +24,24 @@ public class F1 extends Car {
             stop();
             changeGear(1);
             //Stop the car, set gear as 1
+        }
+        if(newSpeed>=1 && newSpeed<=50) {
+            changeGear(1);
+        }
+        if(newSpeed>=51 && newSpeed<=100) {
+            changeGear(2);
+        }
+        if(newSpeed>=101 && newSpeed<=150) {
+            changeGear(3);
+        }
+        if(newSpeed>=151 && newSpeed<=200) {
+            changeGear(4);
+        }
+        if(newSpeed>=201 && newSpeed<=250) {
+            changeGear(5);
+        }
+        if(newSpeed>=250) {
+            changeGear(6);
         }
         //for all other cases, change the gear accordingly
 

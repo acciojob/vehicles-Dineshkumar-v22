@@ -7,9 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="vehicles-solution" />
-        <module name="java-assignment-testing-solution" />
         <module name="vehicles-driver-code" />
+        <module name="java-assignment-testing-solution" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="vehicles-Dineshkumar-v22" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
